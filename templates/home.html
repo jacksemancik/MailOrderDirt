@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}MailOrderDirt.com! Top quality dirt, via envelope!{% endblock %}
+{% block content %}
+<article class="article backimg1" id="nav1">
+  <br />
+    <p>Big Tech Ideas Page3</p>
+</article>
+<div class="article noimg1">
+  {% for product in products %}
+  <a class="divcontainer" href="{{ product.slug }}">
+    <div>
+      <img src="{{ product.imagepath }}" />
+      <p class="product-title">{{ product.name }}</p>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+  <section id="main">
+    <article class="article noimg2" id="nav3">
+        <p>Big Tech Ideas Page3</p>
+    </article>
+
+    <article class="article backimg2" id="nav4">
+        <p>Big Tech Ideas Page3</p>
+    </article>
+
+    <article class="article backimg3" id="nav5">
+        <p>Big Tech Ideas Page3</p>
+    </article>
+</section>
+{% endblock %}
