@@ -3,23 +3,15 @@
   <head>
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/navbar-footer.css' %}" />
     <!--<link rel="text/JavaScript" href="{% static 'navshrink.js' %}" />-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="{% static 'navshrink.js' %}"></script>
+    <script src="{% static 'js/navshrink.js' %}"></script>
+    {% block extendcss %}{% endblock %}
   </head>
   <body>
     {% block navigation %}
-    <header class="nav">
-            <ul class="container-fluid">
-              <li class="pull-left no-attrib"><a href="#nav1">A Template Website</a></li>
-              <span class="navig">
-                <li><a class="container-fluid" href="#nav1">Home</a></li>
-                <li><a class="container-fluid" href="#nav2">About</a></li>
-                <li class="padd"><a class="container-fluid" href="#nav3">Contact</a></li>
-              </span>
-            </ul>
-    </header>
+    {% include 'navbar.html' %}
     {% endblock %}
     {% block content %}{% endblock %}
     {% block footer %}
