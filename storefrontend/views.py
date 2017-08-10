@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.shortcuts import render_to_response
 from storefrontend.models import Products
 
@@ -12,7 +13,7 @@ def productserve(request, value):
         name = productpage['name']
         description = productpage['description']
         price = productpage['price']
-        image = productpage['imagepath']
+        image = productpage['image']
         return render_to_response('product.html', {'name':name,'description':description,'price':price,'image':image})
     else:
         return render_to_response('404.html', value)

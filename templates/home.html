@@ -1,31 +1,41 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}MailOrderDirt.com! Top quality dirt, via envelope!{% endblock %}
+{% block extendcss %}<link rel="stylesheet" href="{% static 'css/home.css' %}" />{% endblock %}
 {% block content %}
 <article class="article backimg1" id="nav1">
   <br />
-    <p>Big Tech Ideas Page3</p>
-</article>
-<div class="article noimg1">
-  {% for product in products %}
-  <a class="divcontainer" href="{{ product.slug }}">
-    <div>
-      <img src="{{ product.imagepath }}" />
-      <p class="product-title">{{ product.name }}</p>
+    <p>Big Tech Ideas Page3</p><br /><br />
+    <div class="right-here">
+      <h1>The #1 Mail Order Dirt Website on the Internet!</h1>
     </div>
-  </a>
+</article>
+<div class="article noimg1" id="products">
+  <div class="page-header"><p class="producttitle">Products</p></div>
+  <ul class="out">
+  {% for product in products %}
+    <a class="divcontainer" href="{{ product.slug }}">
+      <li class="well well-lg productbox">
+        <img src="{{ product.image.url }}" alt="nothing here!" /><br />
+        <p class="product">{{ product.name }}</p><br />
+        <p class="price">${{ product.price }}</p>
+      </li>
+    </a>
   {% endfor %}
+  </ul>
 </div>
+<div class="divider"></div>
   <section id="main">
     <article class="article noimg2" id="nav3">
-        <p>Big Tech Ideas Page3</p>
+        <p class="divtitle">Big Tech Ideas Page3</p>
     </article>
 
     <article class="article backimg2" id="nav4">
-        <p>Big Tech Ideas Page3</p>
+        <p class="divtitle">Big Tech Ideas Page3</p>
     </article>
 
     <article class="article backimg3" id="nav5">
-        <p>Big Tech Ideas Page3</p>
+        <p class="divtitle">Big Tech Ideas Page3</p>
     </article>
 </section>
 {% endblock %}
