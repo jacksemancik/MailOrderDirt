@@ -21,7 +21,7 @@ header {
     backface-visibility: hidden;
 }
 
-.article p {
+.article p.divtitle {
     font-family: sans-serif;
     font-size: 64px;
     font-size: 4rem;
@@ -31,7 +31,7 @@ header {
     margin: 0;
 }
 
-ul{
+ul.navi{
     list-style-type: none;
     margin:0;
     padding:0;
@@ -43,11 +43,11 @@ span.navig{
   float:right;
   padding-left: 30px;
 }
-li{
+.navi li{
   float:left;
 }
 
-li a{
+.navi li a{
     display:block;
     font-size: 16px;
     background-color: #333;
@@ -92,6 +92,7 @@ li a:active, li a:target, li a::after, li a::before{
   color:black;
   text-decoration:none;
 }
+/*
 .containthis{
   min-height:5000px;
   width:100%;
@@ -131,16 +132,32 @@ li a:active, li a:target, li a::after, li a::before{
     background-image:url('Left-Side-Joe.jpg');
     min-height:100%;
 }
+div.noimg1 ul{
+  width:100%;
+  padding-bottom: 500px;
+}
 a.divcontainer{
   text-decoration:none;
   color:black;
   text-align:center;
+  height:300px;
+  width:500px;
 }
-.divcontainer div {
+li.productbox {
+  list-style-type: none;
   display:inline-block;
   background-color:#bdbdbd;
   margin:auto;
   vertical-align: center;
-  width:75px;
-  height:100px;
+  padding:16px 35px;
+  font-size: 10px;
 }
+.productbox img{
+  max-width:500px;
+}
+p.product{
+  font-size: 10px;
+  text-align:center;
+  float:bottom;
+}
+*/
