@@ -1,6 +1,7 @@
 .article {
     width: 100%;
     height: 500px;
+    color:black;
     z-index:0;
     -webkit-transform: translateZ( 0 );
     transform: translateZ( 0 );
@@ -15,11 +16,22 @@ div.right-here{
   height:100%;
   width:100%;
 }
+.right-here div{
+  padding-top:200px;
+  display:block;
+}
 .right-here h1{
   text-align:center;
   display:block;
   vertical-align:bottom;
   margin:auto;
+  color:lightgrey;
+}
+.larger-than-h1{
+  font-size:4em;
+  color:white;
+  text-align:center;
+  font-weight:bold;
 }
 
 .article p.divtitle {
@@ -27,11 +39,16 @@ div.right-here{
     font-size: 64px;
     font-size: 4rem;
     position:relative;
-    line-height: 200px;
+    /*line-height: 200px;*/
     text-align: center;
+    opacity:0.9;
     margin: 0;
 }
-
+.article p.divtitle.grey{
+  background-color:grey;
+  padding-top:30px;
+  padding-bottom:30px;
+}
 
 
 .containthis{
@@ -51,7 +68,7 @@ div.right-here{
 
 .backimg1, .backimg2, .backimg3 {
     position:relative;
-    opacity:.6;
+    /*opacity:.6;*/
     background-attachment: fixed;
     background-position: center;
     background-repeat:no-repeat;
@@ -78,6 +95,7 @@ p.producttitle{
   font-size:64px;
   font-size:4em;
   text-align:center;
+
 }
 div.noimg1 ul{
   width:100%;

@@ -76,4 +76,8 @@ li a:active, li a:target, li a::after, li a::before{
 .foot{
   background-color:grey;
   text-align:center;
+  background-attachment:fixed;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
 }
