@@ -5,7 +5,7 @@ from storefrontend.models import Products, About, Skills
 # Create your views here.
 def homeserve(request):
     products = Products.objects.all()
-    about_text = About.objects.get(id=0)
+    about_text = About.objects.get(id=1)
     skills = Skills.objects.all()
     return render_to_response('home.html', {'products': products, 'about_text':about_text, 'skills':skills})
 
