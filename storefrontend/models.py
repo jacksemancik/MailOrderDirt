@@ -10,3 +10,14 @@ class Products(models.Model):
     slug = models.SlugField()
     def __str__(self):
         return self.name
+class About(models.Model):
+    about = models.TextField()
+    def __str__(self):
+        return self.about
+
+class Skills(models.Model):
+    icon = CharField(max_length=50)
+    title = CharField(max_length=50)
+    description = TextField()
+    def __str__(self):
+        return self.title
