@@ -8,12 +8,12 @@ def homeserve(request):
     return render_to_response('home.html', {'products': products})
 
 def productserve(request, value):
-    productpage = Products.objects.filter(slug=value)
+    productpage = Products.objects.filter(slug__exact=value)
     if productpage:
-        name = productpage['name']
-        description = productpage['description']
-        price = productpage['price']
-        image = productpage['image']
-        return render_to_response('product.html', {'name':name,'description':description,'price':price,'image':image})
+        #name = productpage['name']
+        #description = productpage['description']
+        #price = productpage['price']
+        #image = productpage['image']
+        return render_to_response('product.html', {'product':productpage})
     else:
         return render_to_response('404.html', value)

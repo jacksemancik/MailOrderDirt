@@ -7,17 +7,19 @@
   <br />
     <p>Big Tech Ideas Page3</p>
     <div class="right-here">
-      <div>
-        <p class="larger-than-h1">MailOrderDirt.com</p>
-        <h1>The #1 Mail Order Dirt Website on the Internet!</h1>
-      </div>
+      <a href="" class="notype">
+        <div>
+          <p class="larger-than-h1">MailOrderDirt.com</p>
+          <h1>The #1 Mail Order Dirt Website on the Internet!</h1>
+        </div>
+      </a>
     </div>
 </article>
 <div class="article noimg1" id="products">
-  <div class="page-header"><p class="producttitle">Products</p></div>
+  <p class="producttitle">Products</p>
   <ul class="out">
   {% for product in products %}
-    <a class="divcontainer" href="{{ product.slug }}">
+    <a class="divcontainer" href="shop/{{ product.slug }}">
       <li class="well well-lg productbox">
         <img src="{{ product.image.url }}" alt="nothing here!" /><br />
         <p class="product">{{ product.name }}</p><br />
@@ -30,7 +32,9 @@
 <div class="divider"></div>
   <section id="main">
     <article class="article backimg2" id="nav3">
-        <p class="divtitle grey">Big Tech Ideas Page3</p>
+      <div class="quality">
+        <p class="divtitle">The highest quality dirt available through the mail</p>
+      </div>
     </article>
 
     <article class="article noimg2" id="nav4">
