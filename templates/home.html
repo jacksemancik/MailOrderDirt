@@ -38,20 +38,24 @@
     </article>
 
     <article class="article noimg2" id="nav4">
-      <p class="divtitle about">About</p>
-      <p class="divsub">Why choose our dirt?</p>
-      <div class="about-container">
-        <p class="side-text">Our company is simply the best at what it does</p>
-        <div class="about-text">
-          {{ about_text.about }}
-        </div>
-        <div class="skills">
-          {% for skill in skills %}
-            <div class="skill">
-              <i class="medium material-icons">{{ skill.icon }}</i>
-              <p class="skill-text">{{ skill.description }}</p>
-            </div>
-          {% endfor %}
+      <div class="holder">
+        <p class="divtitle about">About</p>
+        <p class="divsub"><i>Why choose our dirt?</i></p>
+        <div class="about-container">
+          <p class="side-text">Our company is simply the best at what it does</p>
+          <div class="about-text">
+            <p>{{ about_text.about_one }}</p>
+            <p>{{ about_text.about_two }}</p>
+          </div>
+          <div class="skills">
+            {% for skill in skills %}
+              <div class="skill card">
+                <i class="small material-icons">{{ skill.icon }}</i>
+                <p class="skill-title card-title">{{ skill.title }}</p>
+                <p class="skill-text">{{ skill.description }}</p>
+              </div>
+            {% endfor %}
+          </div>
         </div>
       </div>
     </article>
