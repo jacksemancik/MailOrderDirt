@@ -172,6 +172,9 @@ article.noimg2{
 article.noimg2 div.holder{
   padding-top:30px;
 }
+p.about{
+  font-weight:bold;
+}
 div.about-container{
   display:inline-flex;
   /*margin-left:42px;
