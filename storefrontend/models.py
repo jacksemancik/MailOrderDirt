@@ -16,8 +16,8 @@ class About(models.Model):
         return self.about
 
 class Skills(models.Model):
-    icon = CharField(max_length=50)
-    title = CharField(max_length=50)
-    description = TextField()
+    icon = models.CharField(max_length=50)
+    title = models.CharField(max_length=50)
+    description = models.TextField()
     def __str__(self):
         return self.title
