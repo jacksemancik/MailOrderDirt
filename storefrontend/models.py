@@ -11,9 +11,10 @@ class Products(models.Model):
     def __str__(self):
         return self.name
 class About(models.Model):
-    about = models.TextField()
+    about_one = models.TextField()
+    about_two = models.TextField()
     def __str__(self):
-        return self.about
+        return self.about_one
 
 class Skills(models.Model):
     icon = models.CharField(max_length=50)
