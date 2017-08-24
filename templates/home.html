@@ -38,11 +38,40 @@
     </article>
 
     <article class="article noimg2" id="nav4">
-        <p class="divtitle">Big Tech Ideas Page3</p>
+      <p class="divtitle about">About</p>
+      <p class="divsub">Why choose our dirt?</p>
+      <div class="about-container">
+        <p class="side-text">Our company is simply the best at what it does</p>
+        <div class="about-text">
+          {{ about_text.about }}
+        </div>
+        <div class="skills">
+          {% for skill in skills %}
+            <div class="skill">
+              <i class="medium material-icons">{{ skill.icon }}</i>
+              <p class="skill-text">{{ skill.description }}</p>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
     </article>
 
     <article class="article backimg3" id="nav5">
-        <p class="divtitle">Big Tech Ideas Page3</p>
+      <p class="divtitle testimonials">Testimonials</p>
+      <div class="testimonial">
+        <div class="same">
+
+        </div>
+        <div class="same">
+
+        </div>
+        <div class="same">
+
+        </div>
+        <div class="same">
+
+        </div>
+      </div>
     </article>
 </section>
 {% endblock %}
