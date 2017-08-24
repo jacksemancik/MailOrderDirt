@@ -161,3 +161,36 @@ div.quality p{
   border-radius:5px;
 
 }
+
+p.divsub{
+  text-align:center;
+
+}
+article.noimg2{
+  height:auto;
+}
+article.noimg2 div.holder{
+  padding-top:30px;
+}
+div.about-container{
+  display:inline-flex;
+  /*margin-left:42px;
+  margin-right:43px;*/
+
+}
+p.side-text, div.about-text, div.skills{
+  flex:1;
+  padding:30px;
+  margin:25px;
+
+}
+p.side-text{
+  max-width:27%;
+  font-size:4.25em;
+  text-align:right;
+}
+div.skill{
+  padding-top:2.5px;
+  padding-bottom:2.5px;
+  text-align:center;
+}
