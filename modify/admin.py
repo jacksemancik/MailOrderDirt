@@ -1,5 +1,5 @@
 from django.contrib import admin
-from storefrontend.models import Products, Skills, About
+from storefrontend.models import Products, Skills, About, ContactModel
 
 # Register your models here.
 class ProductsAdmin(admin.ModelAdmin):
@@ -11,7 +11,10 @@ class SkillsAdmin(admin.ModelAdmin):
 class AboutAdmin(admin.ModelAdmin):
     list_display = ('id',)
     search_fields = ('about',)
+class ContactModelAdmin(admin.ModelAdmin):
+    list_display = ('first_name','last_name','email','subject',)
 
 admin.site.register(Products, ProductsAdmin)
 admin.site.register(Skills, SkillsAdmin)
 admin.site.register(About, AboutAdmin)
+admin.site.register(ContactModel, ContactModelAdmin)
